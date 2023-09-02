@@ -1,59 +1,83 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap);
 
 body {
-  font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
-*{
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.main{
-    width:100%;
-    height:739px;
-    background:#26262f;
+.main {
+    width: 100%;
+    height: 739px;
+    background: #26262f;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
-.main__box{
-    width:500px;
-    height:650px;
+.main__box {
+    position: absolute;
+    width: 500px;
+    height: 650px;
     background: #000;
-    color:white;
-    font-family:25px;
+    color: white;
+    font-family: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:75px;
+    gap: 75px;
     text-align: center;
-    padding:10px;
-    border:10px solid darkgoldenrod;
-    border-radius:20px;
-}
-.main__box_text{
-    font-size:25px;
+    padding: 10px;
+    border: 10px solid darkgoldenrod;
+    border-radius: 20px;
 }
 
-.main__box_icon{
+.main__box_text {
+    font-size: 25px;
+}
+
+.main__box_icon {
     font-size: 150px;
 }
-.main__box_button{
-    padding:20px;
-    border:6.5px solid orange;
-    border-radius:20px;
-    transition:1s;
-}
-.main__box_button:hover{
-    transform:1s;
-    transform: scale(0.7);
-}
-.main__box_button:active{
-    transform:0.5s;
-    transform: scale(0.5);
-    background: orange;
-    border:6.5px solid darkgoldenrod;
+
+.main__box_button {
+    padding: 20px;
+    border: 6.5px solid orange;
+    border-radius: 20px;
+    transition: 1s;
 }
 
+.main__box_button:hover {
+    transform: 1s;
+    transform: scale(0.7);
+}
+
+.main__box_button:active {
+    transform: 0.5s;
+    transform: scale(0.5);
+    background: orange;
+    border: 6.5px solid darkgoldenrod;
+}
+
+.buttons{
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+input{
+    width: 150px;
+    font-size: 20px;
+}
+
+.inwisible{
+    display: none;
+}

@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="main">
+        <div class="buttons">
+            <input type="button" value="JoKe">
+            <input type="button" value="Quote">
+            <input type="button" value="Dictionary">
+        </div>
+        <!-- Joke-generator -->
         <div class="main__box">
             <div class="main__box_icon">&#128512;</div>
-            <div class="main__box_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rerum eos dolorum nostrum fugit soluta obcaecati ex recusandae dolores esse!</div>
+            <div class="main__box_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rerum eos
+                dolorum nostrum fugit soluta obcaecati ex recusandae dolores esse!</div>
             <div class="main__box_button">Get JoKe Random</div>
         </div>
-    </div >
+        <!-- quote-generator  -->
+        <div class="main__box">
+            <div class="main__box_icon">&#128512;</div>
+            <div class="main__box_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rerum eos
+                dolorum nostrum fugit soluta obcaecati ex recusandae dolores esse!</div>
+            <div class="main__box_button">Get Quote Random</div>
+        </div>
+        <!-- Dictionary -->
+        <div class="main__box">
+            <input class="word" type="text" placeholder="Hello">
+            <input class="search" type="button" value="serch">
+            <div class="dict">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rerum eos
+                dolorum nostrum fugit soluta obcaecati ex recusandae dolores esse!</div>
+        </div>
+    </div>
     <script src="api.js"></script>
 </body>
+
 </html>
